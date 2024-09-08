@@ -8,6 +8,6 @@ export default () => ({
     name: process.env.DATABASE_NAME,
     user: process.env.DABASE_USER,
     password: process.env.DATABASE_PASSWORD,
-    host: process.env.DATABASE_HOST
+    host: parseInt(process.env.DATABASE_HOST)
   }
 })
